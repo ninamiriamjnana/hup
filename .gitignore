@@ -1,3 +1,5 @@
 *.pyc
 *.tmp
+/media
+/src/hup/sqlite.db
 
