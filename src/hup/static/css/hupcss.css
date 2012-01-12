@@ -14,17 +14,65 @@ header, footer, nav, aritcle, aside {
 body {
     margin: 0 auto;
     width: 940px;
-    font: 50px Verdana, Geneva, Arial, Helvetica, sans-serif;
-    background-color:blue;
+    font: 13px/22px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color : #bac0c0;
+
       
 }
 
 nav {
     position: absolute;
     left:0;
-    width: 100%;
-    background-color:grey;
+    width: 100px;
+    height:100%;
+    background-color:black;
+   
 }
+
+nav ul {
+    left:0;
+    margin:0 auto;
+    width:100px;
+    list-style:none;
+}
+
+nav ul li a {
+    left:0;
+    margin:0 auto;
+    display:block;
+    width: 100%;
+    font-size:20px;
+    line-height:44px;
+    text-align: left;
+    text-decoration: none;
+    color:white;
+}
+
+nav ul li a:hover{
+    color : #FFDE79;
+}
+
+nav ul li a:active{
+    color : #FFDE79;
+}
+
+
+header {
+    position: relative;
+    left:0;
+    width:940px;
+    background-color:white;
+}
+
+section#content {
+
+    position: relative;
+    left:0;
+    width: 940px;
+    height:100%;
+  
+
+} 
 
 
 
