@@ -1,0 +1,9 @@
+setup.cfg
+pip-egg-info/postmarkup.egg-info/PKG-INFO
+pip-egg-info/postmarkup.egg-info/SOURCES.txt
+pip-egg-info/postmarkup.egg-info/dependency_links.txt
+pip-egg-info/postmarkup.egg-info/requires.txt
+pip-egg-info/postmarkup.egg-info/top_level.txt
+postmarkup/__init__.py
+postmarkup/parser.py
+postmarkup/tests.py

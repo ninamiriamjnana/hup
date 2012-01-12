@@ -1,0 +1,35 @@
+{% extends "html.html" %}
+
+{% block body%} 
+
+<header> 
+    <h1>Housing the Urban Poor</h1>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="/home">home</a></li>
+        <li><a href="/research/">research</a></li>
+        <li><a href="/researchers/">researchers</a></li>
+        <li><a href="/network/">network</a></li>
+        <li><a href="/publications/">publications</a></li>
+        <li><a href="/news/">news</a></li>
+        <li><a href="/contact/">contact</a></li>
+</nav>
+
+
+
+<section id="content">
+
+  
+    {% block content %} {% endblock %}
+      
+</section>
+
+<footer>
+</footer>
+
+
+
+{% endblock %}

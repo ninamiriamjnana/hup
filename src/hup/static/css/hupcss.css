@@ -1,0 +1,30 @@
+/* Makeshift CSS Reset */
+{
+    margin:0;
+    padding:0;
+}
+
+
+/* Tell the browser to render HTML 5 elements as block */
+
+header, footer, nav, aritcle, aside {
+    display:block;
+}
+
+body {
+    margin: 0 auto;
+    width: 940px;
+    font: 50px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color:blue;
+      
+}
+
+nav {
+    position: absolute;
+    left:0;
+    width: 100%;
+    background-color:grey;
+}
+
+
+

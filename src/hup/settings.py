@@ -3,7 +3,7 @@ import os
 PROJECT_ROOT = os.path.dirname(__file__)
 
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -102,6 +102,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'
 )
 
 ROOT_URLCONF = 'hup.urls'
@@ -120,11 +121,26 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.comments',
+    'django.contrib.flatpages',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'tagging',
+    'mptt',
+    'zinnia',
+    'djangobb_forum',
+    
 )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+  'django.core.context_processors.auth',
+  'django.core.context_processors.i18n',
+  'django.core.context_processors.request',
+  'django.core.context_processors.media',
+  'django.core.context_processors.static',
+  'zinnia.context_processors.version',)
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
