@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -18,4 +19,8 @@ urlpatterns = patterns('',
     url(r'^weblog/', include('zinnia.urls')), #zinnia
     url(r'^comments/', include('django.contrib.comments.urls')),#zinnia
 
+
+
 )
+urlpatterns += staticfiles_urlpatterns()
+
