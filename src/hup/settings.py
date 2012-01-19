@@ -133,7 +133,7 @@ INSTALLED_APPS = (
     'tagging',
     'mptt',
     'zinnia',
-    'djangobb_forum',
+    #'djangobb_forum',
     
 )
 
