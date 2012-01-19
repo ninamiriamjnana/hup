@@ -17,7 +17,7 @@ body {
 nav {
     
     background-color:black;
-    margin-right:0;
+    margin-right:0 !important;
     
     
 
@@ -70,6 +70,7 @@ header h1 {
 
     
     font-size:22px;
+    width: 696px;
 
    
    
