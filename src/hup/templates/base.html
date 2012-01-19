@@ -1,36 +1,45 @@
 {% extends "html.html" %}
 
 {% block body%} 
+<div class="container">
 
-<header> 
-    <h1>Housing the Urban Poor</h1>
-</header>
+    <header class="span-24 colborder last"> 
 
-
-<nav>
-    <ul>
-        <li><a href="/home">home</a></li>
-        <li><a href="/research/">research</a></li>
-        <li><a href="/researchers/">researchers</a></li>
-        <li><a href="/network/">network</a></li>
-        <li><a href="/publications/">publications</a></li>
-        <li><a href="/news/">news</a></li>
-        <li><a href="/contact/">contact</a></li>
-    </ul>
-</nav>
+            <img class="left" src="{{ STATIC_URL }}img/habitat_unit_logo1.gif" alt="Habitat Unit Logo" />
+            <img class="left" src="{{ STATIC_URL }}img/habitat_unit_logo2.gif" alt="Habitat Unit Logo" />         
+            
+                 <h1> Housing the Urban Poor  </h1>
+          
+    </header>
 
 
+    <nav class="span-4 box">
+        <ul>
+            <li><a href="/home">home</a></li>
+            <li><a href="/research/">research</a></li>
+            <li><a href="/researchers/">researchers</a></li>
+            <li><a href="/network/">network</a></li>
+            <li><a href="/publications/">publications</a></li>
+            <li><a href="/news/">news</a></li>
+            <li><a href="/contact/">contact</a></li>
+        </ul>
+    </nav>
 
-<section id="content">
+
+   
+
+    <section id="content" class="span-19 last" style="background-image:url({{ STATIC_URL }}img/hintergrundkarte1.jpg); background-repeat:repeat-x;">
 
   
-    {% block content %} {% endblock %}
+        {% block content %} {% endblock %}
       
-</section>
-
-<footer>
-</footer>
+    </section>
 
 
+    <footer class="span-24 last">
+        impressum
+    </footer>
+
+</div>
 
 {% endblock %}
