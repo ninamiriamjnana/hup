@@ -9,12 +9,16 @@ body {
 
    
     background-color : #bac0c0;
-
+    
       
 }
 
+
 nav {
+    
     background-color:black;
+    
+
     
 }
 
@@ -48,9 +52,11 @@ header {
 }
 
 header h1 {
-    color: #bac0c0;
+    color:  white;
     text-align: right;
-    margin-top: 8px;
+    font-weight: bold;
+    font-size:30px;
+    padding-top: 7px;
       
 }
 
@@ -58,10 +64,13 @@ header h1 {
 
 
 #content {
+
+    
     font-size:22px;
+
    
- 
-  
+   
+    border: 1px solid black;
   
 
 } 
