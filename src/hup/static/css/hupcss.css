@@ -7,9 +7,10 @@ header, footer, nav, aritcle, aside {
 
 body {
 
-   
-    background-color : #bac0c0;
     
+    background-color : #bac0c0;
+   
+   
       
 }
 
@@ -49,17 +50,20 @@ nav ul li a:active{
 header {
    
     background-color:black;
-
+    
+   
    
 }
+
 
 header h1 {
     color:  white;
     text-align: right;
     font-weight: bold;
-    font-size:30px;
-   padding-top:7px;
-    padding-right:20px;
+    font-size:35px;
+    padding-top: 7px;
+    padding-right:0.9em;
+  
       
 }
 
@@ -69,15 +73,23 @@ header h1 {
 #content {
 
     
+    background-color : #bac0c0;
     font-size:22px;
-    width: 762px;
-
+    width: 754px;
+    height:362px;
+    padding-top:1em;
+    padding-left:10px;
    
    
-    border: 1px solid black;
   
 
 } 
+
+
+
+#content h1,h2 {
+    color:#FFDE79;
+}
 
 footer {
     float: center;
