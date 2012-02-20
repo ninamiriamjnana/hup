@@ -1,6 +1,11 @@
 
 /* Tell the browser to render HTML 5 elements as block */
 
+container
+{
+    overflow: hidden;
+}
+
 header, footer, nav, aritcle, aside {
     display:block;
 }
@@ -9,18 +14,18 @@ body {
 
     
     background-color : #bac0c0;
-   
+    
    
       
 }
 
 
+
 nav {
     
-    background-color:black;
+    background-color:#bac0c0;
     margin-right:0 !important;
-    
-    
+    height:410px;
 
     
 }
@@ -28,44 +33,59 @@ nav {
 nav ul {
  
     list-style:none;
+  
+}
+
+nav ul li {
+
+     border: 1px solid #A39999;
+     border-radius: 8px 8px 8px 8px;
+     -moz-box-shadow: 0 0 5px #867979;
+     -webkit-box-shadow: 0 0 5px #867979;
+     box-shadow: 0 0 5px #867979;
+     margin:4px;
+     padding:2px;
 }
 
 nav ul li a {
-     font-size:20px;
-    line-height:44px;
-    text-align: left;
+    font-size:18px;
+    line-height:28px;
+    text-align: center;
     text-decoration: none;
     color:white;
+    padding-left:2px;
 }
 
 nav ul li a:hover{
-    color : #FFDE79;
+    color : #E6AC00;
 }
 
 nav ul li a:active{
-    color : #FFDE79;
+    color : #E6AC00;
 }
+
+
 
 
 header {
    
-    background-color:black;
+    background-color:#bac0c0; /*#4E4646;*/
+     
     
    
    
 }
 
+header h1{
 
-header h1 {
-    color:  white;
+     color:  white;
     text-align: right;
     font-weight: bold;
-    font-size:35px;
-    padding-top: 7px;
-    padding-right:0.9em;
-  
-      
+    font-size:30px;
+    padding-right:10px;
 }
+
+
 
 
 
@@ -74,12 +94,13 @@ header h1 {
 
     
     background-color : #bac0c0;
-    font-size:22px;
-    width: 754px;
-    height:362px;
+    font-size:12px;
+    width: 755px;
+    height:434px;
     padding-top:1em;
     padding-left:10px;
-   
+    overflow: auto;
+  
    
   
 
@@ -88,7 +109,17 @@ header h1 {
 
 
 #content h1,h2 {
-    color:#FFDE79;
+  
+    color:#CC9900;
+    font-weight:bold;
+}
+
+#content h1 {
+     font-size:2.5em;
+}
+
+#content h2 {
+    font-size:1.5em;
 }
 
 footer {
