@@ -133,7 +133,7 @@ INSTALLED_APPS = (
     'tagging',
     'mptt',
     'zinnia',
-    #'djangobb_forum',
+    'djangobb_forum',
     
 )
 
@@ -167,3 +167,8 @@ LOGGING = {
         },
     }
 }
+
+try:
+    import settings_local
+except ImportError:
+    pass

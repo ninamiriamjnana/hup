@@ -23,9 +23,11 @@ body {
 
 nav {
     
-    background-color:#bac0c0;
-    margin-right:0 !important;
+    background-color:#D4D8D6;
+    margin-top:10px;
+    margin-right:10px;
     height:410px;
+    
 
     
 }
@@ -33,27 +35,19 @@ nav {
 nav ul {
  
     list-style:none;
+    padding-top:10px;
   
 }
 
-nav ul li {
 
-     border: 1px solid #A39999;
-     border-radius: 8px 8px 8px 8px;
-     -moz-box-shadow: 0 0 5px #867979;
-     -webkit-box-shadow: 0 0 5px #867979;
-     box-shadow: 0 0 5px #867979;
-     margin:4px;
-     padding:2px;
-}
 
 nav ul li a {
     font-size:18px;
-    line-height:28px;
-    text-align: center;
+    line-height:32px; 
+    text-align: left;
     text-decoration: none;
-    color:white;
-    padding-left:2px;
+    color:black;
+    
 }
 
 nav ul li a:hover{
@@ -69,9 +63,12 @@ nav ul li a:active{
 
 header {
    
-    background-color:#bac0c0; /*#4E4646;*/
-     
-    
+    /*background-color:#bac0c0;*/ /*#4E4646;*/
+   width:700px;  
+   margin-top:10px;
+   padding-top:10px;
+   background-color : #D4D8D6;
+   
    
    
 }
@@ -82,7 +79,8 @@ header h1{
     text-align: right;
     font-weight: bold;
     font-size:30px;
-    padding-right:10px;
+   padding-right:10px;
+   
 }
 
 
@@ -92,15 +90,14 @@ header h1{
 
 #content {
 
-    
-    background-color : #bac0c0;
+      
+    background-color : #D4D8D6;
     font-size:12px;
-    width: 755px;
-    height:434px;
-    padding-top:1em;
-    padding-left:10px;
+    height:400px;
+    margin-top:10px;
     overflow: auto;
-  
+    padding-top:10px;
+    padding-left:40px; 
    
   
 
