@@ -5,6 +5,18 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import admin
 admin.autodiscover()
 
+#djangobb?
+from sitemap import SitemapForum, SitemapTopic
+from forms import RegistrationFormUtfUsername
+from djangobb_forum import settings as forum_settings
+
+#djangobb?
+sitemaps = {
+    'forum': SitemapForum,
+    'topic': SitemapTopic,
+}
+
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'hup.views.home', name='home'),
@@ -19,10 +31,23 @@ urlpatterns = patterns('',
     url(r'^news/', include('zinnia.urls')), #zinnia
     url(r'^comments/', include('django.contrib.comments.urls')),#zinnia
 
-    
+    (r'^forum/', include('djangobb_forum.urls', namespace='djangobb')), #djangobb
+   
 
 
 
 )
 urlpatterns += staticfiles_urlpatterns()
+
+
+
+
+
+# PM Extension
+if (forum_settings.PM_SUPPORT):
+    urlpatterns += patterns('',
+        (r'^forum/pm/', include('messages.urls')),
+   )
+
+
 
