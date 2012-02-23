@@ -6,15 +6,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 #djangobb?
-from sitemap import SitemapForum, SitemapTopic
-from forms import RegistrationFormUtfUsername
 from djangobb_forum import settings as forum_settings
 
-#djangobb?
-sitemaps = {
-    'forum': SitemapForum,
-    'topic': SitemapTopic,
-}
+
 
 
 urlpatterns = patterns('',
