@@ -1,9 +1,6 @@
 # Django settings for hup project.
-import os 
+import os
 PROJECT_ROOT = os.path.dirname(__file__)
-
-
-
 
 
 DEBUG = True
@@ -134,7 +131,7 @@ INSTALLED_APPS = (
     'mptt',
     'zinnia',
     'djangobb_forum',
-    
+
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -167,6 +164,10 @@ LOGGING = {
         },
     }
 }
+
+HAYSTACK_SITECONF = "djangobb_forum.search_indexes"
+HAYSTACK_SEARCH_ENGINE = "whoosh"
+HAYSTACK_WHOOSH_PATH = os.path.join(PROJECT_ROOT, '..', '..', 'whoosh')
 
 try:
     from settings_local import *
