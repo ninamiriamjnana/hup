@@ -75,45 +75,37 @@ header {
    margin-top:10px;
    padding-top:10px;
    background-color : #D4D8D6;
-   
-   
-   
+}
+
+.logo {
+    float: left;
+    padding: 0;
+}
+
+.logo img {
+    display: inline-block;
+    border: 0;
 }
 
 header h1{
-
-     color:  white;
+    color:  white;
     text-align: right;
     font-weight: bold;
     font-size:30px;
-   padding-right:10px;
-   
+    padding-right:10px;
 }
-
-
-
 
 
 
 #content {
-
-      
     background-color : #D4D8D6;
     font-size:12px;
-    height:400px;
-    margin-top:10px;
-    overflow: auto;
-    padding-top:10px;
-    padding-left:40px; 
-   
-  
-
-} 
-
+    margin:10px 0;
+    padding: 20px;
+}
 
 
 #content h1,h2 {
-  
     color:#CC9900;
     font-weight:bold;
 }

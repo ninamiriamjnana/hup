@@ -1,18 +1,14 @@
 {% extends "html.html" %}
-
+{% load webdesign %}
 {% block body %}
 <div class="container">
     {% block header %}
-    <header class="span-24 last"> 
-            
-
+    <header class="span-24 last">
           <h1> Housing for the Urban Poor  </h1>
 
 
-            <a  href="http://www.habitat-unit.de/" target="_blank"><img class="left" src="{{ STATIC_URL }}img/habitat_unit.png" alt="Habitat Unit Logo"  /></a>
-
-        <a href="http://www.tu-berlin.de" target="_blank"> <img  src="{{ STATIC_URL }}img/tuberlin.png" alt="TU Berlin Logo"/></a>
-          
+            <a class="logo" href="http://www.habitat-unit.de/" target="_blank"><img src="{{ STATIC_URL }}img/habitat_unit.png" alt="Habitat Unit Logo"  /></a>
+        <a class="logo" href="http://www.tu-berlin.de" target="_blank"><img  src="{{ STATIC_URL }}img/tuberlin.png" alt="TU Berlin Logo"/></a>
     </header>
     {% endblock %}
     {% block middle %}
@@ -36,10 +32,7 @@
    
 
     <section id="content" class="span-19 last" >
-    <p>
-  
-        {% block content %}  {% endblock %}
-      
+        {% block content %}{% endblock %}
     </section>
 
     {% endblock %}
