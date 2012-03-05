@@ -28,21 +28,15 @@ a:hover {
 }
 
 nav {
-    
     background-color:#D4D8D6;
     margin-top:10px;
     margin-right:10px;
     height:410px;
-    
-
-    
 }
 
 nav ul {
- 
+    padding: 10px 0;
     list-style:none;
-    padding-top:10px;
-  
 }
 
 
@@ -53,12 +47,27 @@ nav ul li a {
     text-align: left;
     text-decoration: none;
     color:black;
-    
+    display: block;
 }
 
 nav ul li a:hover{
-    color : #E6AC00;
+    color : #cc0000;
     background: transparent;
+}
+nav ul li {
+    padding-left: 15px;
+}
+
+nav ul li:hover {
+    border-left: 5px solid #cc0000;
+    padding-left: 10px;
+}
+nav ul li.selected {
+    border-left: 5px solid #bac0c0;
+    padding-left: 10px;
+}
+nav ul li.selected a {
+    color: #bac0c0;
 }
 
 nav ul li a:active{
