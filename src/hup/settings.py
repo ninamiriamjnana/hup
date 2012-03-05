@@ -102,7 +102,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'pybb.middleware.PybbMiddleware',
 )
 
 ROOT_URLCONF = 'hup.urls'
@@ -130,17 +131,20 @@ INSTALLED_APPS = (
     'tagging',
     'mptt',
     'zinnia',
-    'djangobb_forum',
-
+    'pybb',
+    'pytils',
+    'sorl.thumbnail',
+    'pure_pagination',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-  'django.core.context_processors.auth',
-  'django.core.context_processors.i18n',
-  'django.core.context_processors.request',
-  'django.core.context_processors.media',
-  'django.core.context_processors.static',
-  'zinnia.context_processors.version',)
+    'django.core.context_processors.auth',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'pybb.context_processors.processor',
+    'zinnia.context_processors.version',)
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -168,6 +172,14 @@ LOGGING = {
 HAYSTACK_SITECONF = "djangobb_forum.search_indexes"
 HAYSTACK_SEARCH_ENGINE = "whoosh"
 HAYSTACK_WHOOSH_PATH = os.path.join(PROJECT_ROOT, '..', '..', 'whoosh')
+
+AUTH_PROFILE_MODULE = 'pybb.Profile'
+
+PYBB_ATTACHMENT_ENABLE = True
+PYBB_DEFAULT_TITLE = "Housing for the Urban Poor Internal Forum"
+PYBB_ENABLE_SELF_CSS = True
+
+LOGIN_REDIRECT_URL = '/forum/'
 
 try:
     from settings_local import *

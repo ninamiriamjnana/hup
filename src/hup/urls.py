@@ -1,47 +1,24 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
-#djangobb?
-from djangobb_forum import settings as forum_settings
-
-
-
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'hup.views.home', name='home'),
-    # url(r'^hup/', include('hup.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-
+    (r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^news/', include('zinnia.urls')), #zinnia
     url(r'^comments/', include('django.contrib.comments.urls')),#zinnia
-
-    (r'^forum/', include('djangobb_forum.urls', namespace='djangobb')), #djangobb
-   
-
-
-
+    (r'^forum/', include('pybb.urls', namespace='pybb')),
 )
 urlpatterns += staticfiles_urlpatterns()
 
-
-
-
-
-# PM Extension
-if (forum_settings.PM_SUPPORT):
+if settings.DEBUG:
     urlpatterns += patterns('',
-        (r'^forum/pm/', include('messages.urls')),
+        url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+        }),
    )
-
-
-

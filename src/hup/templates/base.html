@@ -1,8 +1,8 @@
 {% extends "html.html" %}
 
-{% block body%} 
+{% block body %}
 <div class="container">
-
+    {% block header %}
     <header class="span-24 last"> 
             
 
@@ -14,17 +14,17 @@
         <a href="http://www.tu-berlin.de" target="_blank"> <img  src="{{ STATIC_URL }}img/tuberlin.png" alt="TU Berlin Logo"/></a>
           
     </header>
-
-
+    {% endblock %}
+    {% block middle %}
     <nav class="span-4">
         <ul>
-            <li><a href="/home">home</a></li>
+            <li><a href="/">home</a></li>
             <li><a href="/news/">news</a></li>
             <li><a href="/research/">research</a></li>
             <li><a href="/researchers/">researchers</a></li>
             <li><a href="/network/">network</a></li>
             <li><a href="/publications/">publications</a></li>
-            <li> <a href="/internal"/>internal</a></li>
+            <li> <a href="{% url pybb:index %}"/>internal</a></li>
             <li><a href="/contact/">contact</a></li>
         </ul>
      <!--   <a href="http://www.tu-berlin.de" target="_blank"> <img  src="{{ STATIC_URL }}img/TUBerlin_Logo_rot.png" alt="TU Berlin Logo" style="padding-left:20px; "/></a>
@@ -42,7 +42,7 @@
       
     </section>
 
-
+    {% endblock %}
     <footer class="span-24 last">
        
     </footer>
