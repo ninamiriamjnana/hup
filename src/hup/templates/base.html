@@ -1,5 +1,5 @@
 {% extends "html.html" %}
-{% load webdesign %}
+{% load webdesign hup_tags %}
 {% block body %}
 <div class="container">
     {% block header %}
@@ -14,14 +14,14 @@
     {% block middle %}
     <nav class="span-4">
         <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/news/">news</a></li>
-            <li><a href="/research/">research</a></li>
-            <li><a href="/researchers/">researchers</a></li>
-            <li><a href="/network/">network</a></li>
-            <li><a href="/publications/">publications</a></li>
-            <li> <a href="{% url pybb:index %}"/>internal</a></li>
-            <li><a href="/contact/">contact</a></li>
+            <li{% if request.path == "/" %} class="selected"{% endif %}><a href="/">home</a></li>
+            <li{% if request.path|startswith:"/news/" %} class="selected"{% endif %}><a href="/news/">news</a></li>
+            <li{% if request.path|startswith:"/research/" %} class="selected"{% endif %}><a href="/research/">research</a></li>
+            <li{% if request.path|startswith:"/researchers/" %} class="selected"{% endif %}><a href="/researchers/">researchers</a></li>
+            <li{% if request.path|startswith:"/network/" %} class="selected"{% endif %}><a href="/network/">network</a></li>
+            <li{% if request.path|startswith:"/publications/" %} class="selected"{% endif %}><a href="/publications/">publications</a></li>
+            <li{% if request.path|startswith:"/forum/" %} class="selected"{% endif %}> <a href="{% url pybb:index %}"/>internal</a></li>
+            <li{% if request.path|startswith:"/contact/" %} class="selected"{% endif %}><a href="/contact/">contact</a></li>
         </ul>
      <!--   <a href="http://www.tu-berlin.de" target="_blank"> <img  src="{{ STATIC_URL }}img/TUBerlin_Logo_rot.png" alt="TU Berlin Logo" style="padding-left:20px; "/></a>
 

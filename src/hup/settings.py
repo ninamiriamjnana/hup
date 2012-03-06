@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'zinnia',
     'pybb',
     'pytils',
+    'hup',
     'sorl.thumbnail',
     'pure_pagination',
 )
