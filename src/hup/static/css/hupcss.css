@@ -79,11 +79,16 @@ nav ul li a:active{
 
 header {
    
-    /*background-color:#bac0c0;*/ /*#4E4646;*/
+   background:url("../img/header_background.jpg");
    width:700px;  
    margin-top:10px;
    padding-top:10px;
    background-color : #D4D8D6;
+}
+
+header a:hover{
+    background:transparent;
+
 }
 
 .logo {
@@ -102,6 +107,7 @@ header h1{
     font-weight: bold;
     font-size:30px;
     padding-right:10px;
+    text-shadow: 2px 3px 2px rgba(100,100,100, .5);
 }
 
 
