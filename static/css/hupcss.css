@@ -1,0 +1,136 @@
+
+/* Tell the browser to render HTML 5 elements as block */
+
+container
+{
+    overflow: hidden;
+}
+
+header, footer, nav, aritcle, aside {
+    display:block;
+}
+
+body {
+
+    
+    background-color : #bac0c0;
+    
+   
+      
+}
+
+
+
+nav {
+    
+    background-color:#D4D8D6;
+    margin-top:10px;
+    margin-right:10px;
+    height:410px;
+    
+
+    
+}
+
+nav ul {
+ 
+    list-style:none;
+    padding-top:10px;
+  
+}
+
+
+
+nav ul li a {
+    font-size:18px;
+    line-height:32px; 
+    text-align: left;
+    text-decoration: none;
+    color:black;
+    
+}
+
+nav ul li a:hover{
+    color : #E6AC00;
+}
+
+nav ul li a:active{
+    color : #E6AC00;
+}
+
+
+
+
+header {
+   
+    /*background-color:#bac0c0;*/ /*#4E4646;*/
+   width:700px;  
+   margin-top:10px;
+   padding-top:10px;
+   padding-bottom:0px;
+   background-color : #D4D8D6;
+   
+   
+   
+}
+
+header h1{
+
+     color:  white;
+    text-align: right;
+    font-weight: bold;
+    font-size:30px;
+   padding-right:10px;
+   
+}
+
+header img{
+
+    float:left !important;
+    padding:0px !important;
+
+}
+
+
+
+
+
+
+#content {
+
+      
+    background-color : #D4D8D6;
+    font-size:12px;
+    height:400px;
+    margin-top:10px;
+    overflow: auto;
+    padding-top:10px;
+    padding-left:40px; 
+   
+  
+
+} 
+
+
+
+#content h1,h2 {
+  
+    color:#CC9900;
+    font-weight:bold;
+}
+
+#content h1 {
+     font-size:2.5em;
+}
+
+#content h2 {
+    font-size:1.5em;
+}
+
+footer {
+    float:center;
+    text-align:center;
+}
+
+
+
