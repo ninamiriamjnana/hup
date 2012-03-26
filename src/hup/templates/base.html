@@ -18,8 +18,8 @@
             <li{% if request.path == "/" %} class="selected"{% endif %}><a href="/">home</a></li>
             <li{% if request.path|startswith:"/news/" %} class="selected"{% endif %}><a href="/news/">news</a></li>
             <li{% if request.path|startswith:"/research/" %} class="selected"{% endif %}><a href="/research/">research</a></li>
-            <li{% if request.path|startswith:"/researchers/" %} class="selected"{% endif %}><a href="/researchers/">researchers</a></li>
-            <li{% if request.path|startswith:"/network/" %} class="selected"{% endif %}><a href="/network/">network</a></li>
+            <li{% if request.path|startswith:"/researchers/" %} class="selected"{% endif %}><a href="/team/">team</a></li>
+            <li{% if request.path|startswith:"/partners/" %} class="selected"{% endif %}><a href="/partners/">partners</a></li>
             <li{% if request.path|startswith:"/publications/" %} class="selected"{% endif %}><a href="/publications/">publications</a></li>
             <li{% if request.path|startswith:"/forum/" %} class="selected"{% endif %}> <a href="{% url pybb:index %}"/>internal</a></li>
             <li{% if request.path|startswith:"/contact/" %} class="selected"{% endif %}><a href="/contact/">contact</a></li>
