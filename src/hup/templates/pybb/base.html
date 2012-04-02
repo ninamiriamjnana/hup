@@ -23,7 +23,7 @@
     {% include "pybb/breadcrumb.html" %}
     {% endblock %}
 {% if user.is_authenticated %}
-{% block content %}{% endblock content %}
+{% block content %}<p><a href="{% url django.contrib.auth.views.logout %}">logout<a></p>{% endblock content %}
 {% else %}
 <p>Please <a href="{% url django.contrib.auth.views.login %}">login<a>!</p>
 {% endif %}
