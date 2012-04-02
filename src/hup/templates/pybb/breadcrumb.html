@@ -1,0 +1,25 @@
+{% load i18n pybb_tags %}
+
+<ul class='breadcrumb'>
+    {% if request.path != '/' %}
+        <li><a href="/">{% trans "Home" %}</a> <span class="divider">/</span></li>
+    {% endif %}
+    {% if object %}
+            {% if object.get_parents %}
+            {% for obj in object.get_parents %}
+                <li>{% pybb_link obj %} <span class="divider">/</span></li>
+            {% endfor %}
+        {% endif %}
+        {% if extra_crumb %}
+            <li>{% pybb_link object %} <span class="divider">/</span></li>
+        {% else %}
+            <li>{{ object }}</li>
+        {% endif %}
+    {% endif %}
+    {% if extra_crumb %}
+        <li>{% trans extra_crumb %}</li>
+    {% endif %}
+
+       <li style="float:right; margin-right:0px;"> {% if user.is_authenticated %}<a href="{% url django.contrib.auth.views.logout %}">logout<a>{% endif %} </li>
+
+</ul>

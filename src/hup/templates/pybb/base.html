@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% load i18n pybb_tags %}
 
-{%block title %}{{ PYBB_DEFAULT_TITLE }}{% endblock title %}
+{%block title %}
+
+{{ PYBB_DEFAULT_TITLE }}
+{% endblock title %}
 
 {% block extra-head %}
     {% block pybb_styles_extra %}{% endblock %}
@@ -15,15 +18,19 @@
     {% block pybb_scripts_extra %}{% endblock %}
     {% block pybb_head_extra %}{% endblock %}
     {#    <link rel="stylesheet" href="{{ STATIC_URL }}pybb_bootstrap.css" type="text/css" />#}
+
+    
+
 {% endblock extra-head %}
 
 
 {% block middle %}
+
 {% block breadcrumb %}
     {% include "pybb/breadcrumb.html" %}
     {% endblock %}
 {% if user.is_authenticated %}
-{% block content %}<p><a href="{% url django.contrib.auth.views.logout %}">logout<a></p>{% endblock content %}
+{% block content %}{% endblock content %}
 {% else %}
 <p>Please <a href="{% url django.contrib.auth.views.login %}">login<a>!</p>
 {% endif %}
