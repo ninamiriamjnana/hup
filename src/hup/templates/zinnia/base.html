@@ -18,6 +18,8 @@
   {% zinnia_breadcrumbs %}
 {% endblock %}
 
+<!--- do not display some information that is not needed -->
+<!--  
 {% block sidebar %}
 <div class="search">
   <h3>{% trans "Search" %}</h3>
@@ -74,6 +76,7 @@
   <h3>{% trans "Archives" %}</h3>
   {% get_archives_entries_tree %}
 </div>
+-->
 {% if user.is_authenticated %}
 <div class="tools">
   <h3>{% trans "Tools" %}</h3>

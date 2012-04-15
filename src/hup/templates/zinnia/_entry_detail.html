@@ -31,12 +31,14 @@
 -->
     {% trans "Written on" %}        
      <abbr class="published" title="{{ object.creation_date|date:"c" }}Z">{{ object.creation_date|date:"DATE_FORMAT" }}</abbr>
+<!--- do not display some information that is not needed -->
+<!--  
     {% if object.categories.count %}
     {% trans "in" %}
     {% for category in object.categories.all %}
     <a href="{{ category.get_absolute_url }}" title="{{ category }}" rel="tag category">{{ category }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}.
   </p>
-
+-->
 </div>
 
 <div class="entry-body span-16 last">
@@ -53,9 +55,9 @@
     {{ object_content }}
   </div>
 </div>
-
-<div class="entry-footer">
 <!-- 
+<div class="entry-footer">
+
  <p class="entry-tags span-16 last">
     <strong>{% trans "Tags" %}</strong> :
     {% tags_for_object object as tag_list %}
@@ -66,7 +68,7 @@
     <span>{% trans "No tags" %}</span>
     {% endfor %}
   </p>
--->
+
   <p class="entry-shorturl span-16 last">
     <strong>{% trans "Short url" %}</strong> :
     {% if object.short_url %}
@@ -111,4 +113,6 @@
     {% endif %}
     {% endwith %}
   </p>
+
 </div>
+-->
