@@ -82,7 +82,7 @@ header {
    background:url("../img/header_background.jpg");
    width:700px;  
    margin-top:10px;
-   padding-top:10px;
+   padding-top:0px;
    background-color : #D4D8D6;
 }
 
@@ -107,7 +107,7 @@ header h1{
     text-align: right;
     font-weight: bold;
     font-size:30px;
-    padding-right:10px;
+    padding-right:0px;
     text-shadow: 2px 2px 1px rgba(50,50,50, .8);
 }
 
