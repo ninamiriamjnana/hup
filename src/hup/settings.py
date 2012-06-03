@@ -137,6 +137,7 @@ INSTALLED_APPS = (
     'hup',
     'sorl.thumbnail',
     'pure_pagination',
+        
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
