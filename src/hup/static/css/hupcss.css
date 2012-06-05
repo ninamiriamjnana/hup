@@ -94,12 +94,16 @@ header a:hover{
 .logo {
     float: left;
     padding: 0;
+    margin:0;
     height: 40px;
 }
 
 .logo img {
     display: inline-block;
     border: 0;
+    padding:0px;
+    margin:0px;
+    
 }
 
 header h1{
