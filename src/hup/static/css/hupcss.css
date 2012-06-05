@@ -84,6 +84,7 @@ header {
    margin-top:10px;
    padding-top:0px;
    background-color : #D4D8D6;
+   position:relative;
 }
 
 header a:hover{

@@ -5,15 +5,16 @@
     {% block header %}
     <header class="span-24 last">
 
-        <img src="{{ STATIC_URL }}img/headergrey.png" style="float:left; margin:0px;" /> 
+        <img src="{{ STATIC_URL }}img/headergrey.png"  style="display: inline-block;
+    border: 0; float:left; " /> 
 
           <h1> Housing for the Urban Poor</br>From Local Action to Global Networks  </h1>
 
 
 
-            <a class="logo" href="http://www.habitat-unit.de/" target="_blank"><img src="{{ STATIC_URL }}img/habitat_unit.png" alt="Habitat Unit Logo"  /></a>
-        <a class="logo" href="http://www.tu-berlin.de" target="_blank"><img  src="{{ STATIC_URL }}img/tuberlin.png" alt="TU Berlin Logo"/></a>
-         <a class="logo" href="http://www.dfg.de/" target="_blank"><img src="{{ STATIC_URL }}img/dfgneu.png" alt="DFG Logo"  /></a>    
+            <a class="logo" href="http://www.habitat-unit.de/" target="_blank"><img src="{{ STATIC_URL }}img/habitat_unit.png" alt="Habitat Unit Logo"   style="position:absolute; left:0px;bottom:0px;" /></a>
+        <a class="logo" href="http://www.tu-berlin.de" target="_blank"><img  src="{{ STATIC_URL }}img/tuberlin.png" alt="TU Berlin Logo" style="position:absolute; left:99px; bottom:0px;"  /></a>
+         <a class="logo" href="http://www.dfg.de/" target="_blank"><img src="{{ STATIC_URL }}img/dfgneu.png" alt="DFG Logo" style="position:absolute; left:150px;top:75px;"  /></a>    
 
     </header>
     {% endblock %}
