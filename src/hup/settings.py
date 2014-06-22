@@ -183,6 +183,7 @@ PYBB_DEFAULT_TITLE = "Housing for the Urban Poor Internal Forum"
 PYBB_ENABLE_SELF_CSS = True
 
 LOGIN_REDIRECT_URL = '/forum/'
+ZINNIA_AUTO_CLOSE_COMMENTS_AFTER = 0
 
 try:
     from settings_local import *
